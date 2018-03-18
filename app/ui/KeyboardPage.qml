@@ -93,7 +93,7 @@ Grid {
                             pushText: entry.pushText ? entry.pushText : text,
                             kbdKeys: entry.kbdKeys ? JSON.stringify(entry.kbdKeys) : JSON.stringify([]),
                             secondaryAction: entry.secondaryAction ? entry.secondaryAction : "",
-                            textColor: entry.textColor ? entry.textColor : "#5a5a5c"
+                            textColor: entry.textColor ? entry.textColor : "#F2F2F2"
                         }
                     )
 

@@ -30,7 +30,7 @@ MainView {
     id: mainView
     // objectName for functional testing purposes (autopilot-qt5)
     objectName: "calculator";
-    applicationName: "com.ubuntu.calculator";
+    applicationName: "com.ubuntu.calcredux";
 
     automaticOrientation: true
     anchorToKeyboard: textInputField.visible ? false : true
@@ -597,12 +597,12 @@ MainView {
                         width: parent.width - units.gu(2)
                         height: parent.height
 
-                        color: UbuntuColors.orange
+                        color: "#14cfa8"
                         // remove ubuntu shape
                         style: TextFieldStyle {
                             background: Item {
                                 Rectangle {
-                                    color: "#EFEEEE"
+                                    color: UbuntuColors.slate
                                     width: parent.width
                                     height: parent.height
                                 }
@@ -733,7 +733,7 @@ MainView {
                             PropertyAnimation {
                                 target: textInputField
                                 properties: "color"
-                                to: "#000000"
+                                to: "#ffffff"
                                 duration: UbuntuAnimation.SnapDuration
                             }
                             PauseAnimation {
@@ -742,7 +742,7 @@ MainView {
                             PropertyAnimation {
                                 target: textInputField
                                 properties: "color"
-                                to: UbuntuColors.orange
+                                to: "#14cfa8"
                                 duration: UbuntuAnimation.SnapDuration
                             }
                         }

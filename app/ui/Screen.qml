@@ -73,7 +73,7 @@ ListItem {
                 id: creationTimeText
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
-                color: UbuntuColors.darkGrey
+                color: UbuntuColors.graphite
                 text: formatDate(model.date)
                 textFormat: Text.PlainText
                 font.pixelSize: units.gu(1.5)
@@ -86,7 +86,7 @@ ListItem {
                 anchors.bottom: parent.bottom
                 width: height
                 name: model.isFavourite ? "starred" : "non-starred"
-                color: model.isFavourite ? UbuntuColors.orange : "white"
+                color: model.isFavourite ? "#F89B0F" : "white"
                 asynchronous: true
             }
 
@@ -94,7 +94,7 @@ ListItem {
                 id: favouriteDescriptionText
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
-                color: UbuntuColors.orange
+                color: UbuntuColors.blue
                 text: model.favouriteText
                 textFormat: Text.PlainText
                 width: paintedWidth + units.gu(3)
@@ -119,7 +119,7 @@ ListItem {
                 visible: mainView.isScreenIsWide
                 anchors.top: parent.top
 
-                color: UbuntuColors.darkGrey
+                color: UbuntuColors.jet
                 text: Formula.returnFormulaToDisplay(model.result, i18n, mainView.decimalPoint)
                 textFormat: Text.PlainText
                 font.pixelSize: units.gu(3.5)
@@ -134,7 +134,7 @@ ListItem {
                 width: parent.width - result.width
                 anchors.bottom: parent.bottom
 
-                color: UbuntuColors.darkGrey
+                color: UbuntuColors.slate
                 textFormat: Text.PlainText
                 text: Formula.returnFormulaToDisplay(model.formula, i18n, mainView.decimalPoint) + " ="
                 font.pixelSize: units.gu(2.5)

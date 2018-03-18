@@ -1,7 +1,7 @@
 {
-    "name": "com.ubuntu.calculator",
+    "name": "com.ubuntu.calcredux",
     "architecture": "all",
-    "description": "Powerful and easy to use calculator",
+    "description": "new themed calcuator",
     "framework": "ubuntu-sdk-15.04.6",
     "hooks": {
         "calculator": {
@@ -9,11 +9,9 @@
             "desktop": "@CMAKE_INSTALL_DATADIR@/applications/ubuntu-calculator-app.desktop"
         }
     },
-    "maintainer": "Brian Douglass <brian@ubports.com>",
+    "maintainer": "Mateo Salta <mateo_salta@yahoo.com>",
     "title": "@APP_NAME@",
     "icon": "@ICON@",
-    "version": "@APP_VERSION@",
-    "x-test": {
-        "autopilot": "@AUTOPILOT_DIR@"
-    }
+    "version": "@APP_VERSION@"
+    
 }

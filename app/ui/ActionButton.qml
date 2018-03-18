@@ -28,7 +28,7 @@ AbstractButton {
     Rectangle {
         visible: abstractButton.pressed
         anchors.fill: parent
-        color:  UbuntuColors.orange
+        color:  UbuntuColors.blue
     }
 
     Icon {
@@ -36,7 +36,7 @@ AbstractButton {
         width: units.gu(2.5)
         height: width
         anchors.centerIn: parent
-        color:  UbuntuColors.orange
+        color:  UbuntuColors.blue
         asynchronous: true
     }
 }

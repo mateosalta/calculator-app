@@ -41,9 +41,9 @@ MouseArea {
 
     Rectangle {
         anchors.fill: parent
-        border.color: "#d0d0d0"
+        border.color: UbuntuColors.graphite
         border.width: units.dp(0.5)
-        color: buttonRect.pressed || buttonRect.kbdPressed ? "#E2E1E4" : "#eeeeee"
+        color: buttonRect.pressed || buttonRect.kbdPressed ? "#5A7072" : UbuntuColors.inkstone
 
         Behavior on color {
             ColorAnimation {
